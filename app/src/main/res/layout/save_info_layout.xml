@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b20000">
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/d_id"
+        android:hint="Add Word"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toStartOf="@+id/button4" />
+
+    <Button
+        android:text="clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="clearWord"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="saveData"
+        android:layout_below="@+id/d_id"
+        android:layout_alignStart="@+id/d_id"
+        android:layout_marginTop="93dp" />
+</RelativeLayout>

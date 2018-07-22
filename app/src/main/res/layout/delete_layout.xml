@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006600">
+
+    <Button
+        android:text="Delete Word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_delete"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/del_pass" />
+
+    <Button
+        android:text="clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/button5"
+        android:onClick="clearWord"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:id="@+id/del_pass"
+        android:layout_above="@+id/b_delete"
+        android:layout_toStartOf="@+id/button5" />
+
+</RelativeLayout>
